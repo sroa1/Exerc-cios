@@ -16,8 +16,8 @@ public class Time {
     }
 
     public Time() {
-        this.nome = nome;
-        this.categoria = categoria;
+        this.nome = "indefinido";
+        this.categoria = "indefinido";
         this.anoDeCriacao = 0;
         this.quantidadeDeSocios = 0;
         this.historico = "indefinido";
