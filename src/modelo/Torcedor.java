@@ -9,4 +9,16 @@ public class Torcedor {
         this.idade = idade;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    
 }
