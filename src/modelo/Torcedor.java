@@ -9,6 +9,12 @@ public class Torcedor {
         this.idade = idade;
     }
 
+    public Torcedor(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = "N";
+    }
+
     public String getNome() {
         return nome;
     }
@@ -20,5 +26,5 @@ public class Torcedor {
     public int getIdade() {
         return idade;
     }
-    
+
 }
