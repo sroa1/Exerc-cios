@@ -8,6 +8,11 @@ public class Time{
     private int quantidadeDeSocios;
     private String historico;
 
+    public int calcularIdade(int anoDeCriacao){
+        int idade = (2019 - anoDeCriacao);
+        return idade;
+    }
+
     public String getNome() {
         return nome;
     }
