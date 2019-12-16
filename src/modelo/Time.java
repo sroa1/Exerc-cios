@@ -7,6 +7,18 @@ public class Time{
     private int anoDeCriacao;
     private int quantidadeDeSocios;
     private String historico;
+<<<<<<< HEAD
+    
+    public Time(String nome, String categoria) {
+    	this.nome = nome;
+    	this.categoria = categoria;
+    	this.anoDeCriacao = 0;
+    	this.quantidadeDeSocios = 0;
+    	this.historico = "indefinido";
+    	
+    }
+    
+=======
 
 
     public void adicionarSocios(int novosSocios) {      
@@ -23,6 +35,7 @@ public class Time{
 
     
   
+>>>>>>> 1a3ac049712be1b9956624e6492b99a7ac9b06e7
     public int calcularIdade(int anoDeCriacao){
         int idade = (2019 - anoDeCriacao);
         return idade;
