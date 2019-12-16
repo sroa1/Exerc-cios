@@ -14,19 +14,26 @@ public class Time {
         this.quantidadeDeSocios = 0;
         this.historico = "indefinido";
     }
-    
+
+    public Time() {
+        this.nome = nome;
+        this.categoria = categoria;
+        this.anoDeCriacao = 0;
+        this.quantidadeDeSocios = 0;
+        this.historico = "indefinido";
+    }
 
     public int calcularIdade() {
         int idade = (2019 - anoDeCriacao);
         return idade;
     }
-    
+
     public void imprimeInfo() {
-    	getNome();
-    	getCategoria();
-    	getAnoDeCriacao();
-    	getQuantidadeDeSocios();
-    	getHistorico();
+        getNome();
+        getCategoria();
+        getAnoDeCriacao();
+        getQuantidadeDeSocios();
+        getHistorico();
     }
 
     public String contagemRegressiva() {
@@ -52,6 +59,10 @@ public class Time {
 
     public void setHistorico(String historico) {
         this.historico = historico;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getNome() {
