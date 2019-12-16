@@ -7,4 +7,10 @@ public class Time{
     private int anoDeCriacao;
     private int quantidadeDeSocios;
     private String historico;
+
+    public void adicionarSocios(final int novosSocios) {      
+        this.quantidadeDeSocios += novosSocios;
+
+    }
+    
 }
