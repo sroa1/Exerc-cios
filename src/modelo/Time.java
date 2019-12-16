@@ -7,15 +7,23 @@ public class Time{
     private int anoDeCriacao;
     private int quantidadeDeSocios;
     private String historico;
-
-
-    
-
-    }
   
     public int calcularIdade(int anoDeCriacao){
         int idade = (2019 - anoDeCriacao);
         return idade;
+    }
+    
+    public void adicionarSocios(int novosSocios) {      
+        this.quantidadeDeSocios += novosSocios;
+        System.out.println("Foram adicionados " + novosSocios);
+    }
+    
+    public void imprimeInfo() {
+    	getNome();
+    	getCategoria();
+    	getAnoDeCriacao();
+    	getQuantidadeDeSocios();
+    	getHistorico();
     }
 
     public String getNome() {
@@ -38,15 +46,5 @@ public class Time{
         return historico;
     }
 
-    public void adicionarSocios(int novosSocios) {      
-        this.quantidadeDeSocios += novosSocios;
-        System.out.println("Foram adicionados " + novosSocios);
-    }
-    public void imprimeInfo() {
-    	getNome();
-    	getCategoria();
-    	getAnoDeCriacao();
-    	getQuantidadeDeSocios();
-    	getHistorico();
-    }
+    
 }
