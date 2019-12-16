@@ -38,6 +38,10 @@ public class Time {
         System.out.println("Foram adicionados " + novosSocios);
     }
 
+    public void imprimirMensagem(String mensagem){
+        System.out.println("Mensagem recebida: " +  mensagem);
+    }
+
     public void setAnoDeCriacao(int anoDeCriacao) {
         this.anoDeCriacao = anoDeCriacao;
     }
