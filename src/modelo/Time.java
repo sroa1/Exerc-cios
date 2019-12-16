@@ -48,6 +48,10 @@ public class Time {
     public void imprimirMensagem(String mensagem){
         System.out.println("Mensagem recebida: " +  mensagem);
     }
+    public void imprimirMensagem(){
+        System.out.println("Nenhuma mensagem recebida. Utilize o outro método");
+    }
+
 
     public void setAnoDeCriacao(int anoDeCriacao) {
         this.anoDeCriacao = anoDeCriacao;
