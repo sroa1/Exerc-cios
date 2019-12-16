@@ -7,6 +7,7 @@ public class Time{
     private int anoDeCriacao;
     private int quantidadeDeSocios;
     private String historico;
+<<<<<<< HEAD
     
     public Time(String nome, String categoria) {
     	this.nome = nome;
@@ -17,6 +18,14 @@ public class Time{
     	
     }
     
+=======
+
+
+    
+
+    }
+  
+>>>>>>> 1a3ac049712be1b9956624e6492b99a7ac9b06e7
     public int calcularIdade(int anoDeCriacao){
         int idade = (2019 - anoDeCriacao);
         return idade;
@@ -42,4 +51,15 @@ public class Time{
         return historico;
     }
 
+    public void adicionarSocios(int novosSocios) {      
+        this.quantidadeDeSocios += novosSocios;
+        System.out.println("Foram adicionados " + novosSocios);
+    }
+    public void imprimeInfo() {
+    	getNome();
+    	getCategoria();
+    	getAnoDeCriacao();
+    	getQuantidadeDeSocios();
+    	getHistorico();
+    }
 }
