@@ -6,7 +6,7 @@ public class Time {
     private int anoDeCriacao;
     private int quantidadeDeSocios;
     private String historico;
-
+    
     public Time(String nome, String categoria) {
         this.nome = nome;
         this.categoria = categoria;
@@ -28,9 +28,26 @@ public class Time {
         this.historico = historico;
     }
 
-    public int calcularIdade(int anoDeCriacao) {
+    public void imprimeInfo() {
+        getNome();
+        getCategoria();
+        getAnoDeCriacao();
+        getQuantidadeDeSocios();
+        getHistorico();
+    }
+
+    public int calcularIdade() {
         int idade = (2019 - anoDeCriacao);
         return idade;
+    }
+
+    public String contagemRegressiva() {
+        return "Faltam " + (100 - calcularIdade()) + " para o centenário do time. ";
+    }
+
+    public void adicionarSocios(int novosSocios) {
+        this.quantidadeDeSocios += novosSocios;
+        System.out.println("Foram adicionados " + novosSocios);
     }
 
     public String getNome() {
