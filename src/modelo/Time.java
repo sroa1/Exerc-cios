@@ -45,13 +45,18 @@ public class Time {
         System.out.println("Foram adicionados " + novosSocios);
     }
 
-    public void imprimirMensagem(String mensagem){
-        System.out.println("Mensagem recebida: " +  mensagem);
-    }
-    public void imprimirMensagem(){
-        System.out.println("Nenhuma mensagem recebida. Utilize o outro método");
+    public String imprimeMensagem(String mensagem) {
+        return ("Mensagem recebida: " + mensagem);
     }
 
+    public String imprimeMensagem() {
+        return "Nenhuma mensagem recebida. Utilize o outro método";
+    }
+
+    public String imprimeMensagem(String primeiraMensagem, String segundaMensagem) {
+        return ("Mensagem 1 recebida: " + primeiraMensagem 
+                + " Mensagem 2 recebida: " + segundaMensagem);
+    }
 
     public void setAnoDeCriacao(int anoDeCriacao) {
         this.anoDeCriacao = anoDeCriacao;
